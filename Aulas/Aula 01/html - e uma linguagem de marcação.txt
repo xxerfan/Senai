@@ -1,0 +1,87 @@
+CSS (Cascading Style Sheets) é uma linguagem usada para estilizar e formatar o conteúdo criado em HTML. Ela define como os elementos HTML serão apresentados na página compondo propriedade: valor;.
+
+SEO (Search Engine Optimization) é um conjunto de práticas que visam otimizar o conteúdo de um site para que ele seja facilmente encontrado e bem posicionado nos motores de busca como o Google.
+
+HTML (HyperText Markup Language) é a linguagem de marcação padrão usada para criar páginas web. Ela estrutura o conteúdo, permitindo que navegadores interpretem e exibam textos, imagens e outros elementos, composta por "TAGS" que são representadas pelos símbolos (<) maior que (>) menor que.
+
+O servidor sempre busca o arquivo HTML nomeado como index na pagina principal
+
+<h1> até <h6>: Tags de cabeçalhos para organizar o conteúdo. <h1> é o título principal, e os números crescentes indicam subtítulos.(Obs.<h1> titulo de conteúdo de força maior ( boas praticas da google e ter somente um h1), os demais do <h2>, <h3>, <h4>, <h5> e <h6> vão descendo 1 nível em cada)
+
+
+Estrutura Básica de um Documento HTML
+Um documento HTML básico possui a seguinte estrutura:
+html
+
+<html>
+	<head>
+		<title>Olá Mundo!</title>
+	</head>
+	<body>
+		<h1>Olá Mundo!</h1>
+		<h2>Olá Mundo!</h2>
+		<h3>Olá Mundo!</h3>
+		<h4>Olá Mundo!</h4>
+		<h5>Olá Mundo!</h5>
+		<h6>Olá Mundo!</h6>
+	</body>
+</html>
+
+<html>: Elemento raiz de um documento HTML.
+
+
+<head>: Contém metadados sobre o documento (como o título da página).
+
+
+<title>: Define o título da página, visível na aba do navegador.
+
+
+<body>: Contém o conteúdo visível da página
+
+TAG <P>: Paragrafo 
+
+TAG <em> ou <i>: Itálico
+
+TAG <b> ou <strong>: Negrito
+
+TAG <u>: sublinhado
+
+TAG <s>: traçado
+
+TAG <sub>: baixo
+
+TAG <sup>: sobe
+
+TAG <BR> ou </BR> ou <BR/>: quebra de linha
+
+TAG <IMG  /> = Exibe uma imagem.
+	
+	IMG {
+WIDTH: 100%;             (OBS:WIDTH E UMA PROPRIEDADE PARA LARGURA E HEIGH E UMA DE ALTURA)            
+}
+
+Anotações Extras
+Sempre use um único <h1> para o título principal da página.
+
+
+Evite usar muitos estilos inline em HTML. Prefira sempre o uso de classes e IDs no CSS.
+
+
+Em SEO, não exagere no uso de palavras-chave. O conteúdo deve ser fluido e natural.
+
+
+Organize o seu conteúdo de forma hierárquica para que o Google compreenda a estrutura da página.
+
+
+Utilize meta tags corretamente para melhorar a visibilidade nos motores de busca.
+
+lista em HTML a estrutura de menu ou lista de compras/ receitas e afins
+Tag <ul> unordered list - desordenada - pontuada
+Tag <ol> ordered lisr - ordenada - numerada
+
+tag <hr> cria uma linha separadora 
+
+
+
+
+

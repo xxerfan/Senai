@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Exercício</title>
+	</head>
+	<body>
+		<p><b>Atenção!</b><br> O curso <i>HTML para iniciantes</i> está com <i>desconto exclusivo</i> para os primeiros inscritos. Valor original: R$ 199,00 <b>Agora por apenas R$ 99,00!</b></p>
+
+		<p>Essa promoção é válida até o dia 15 de abril<sup>2</sup>.<br>Não perca essa chance de aprender as bases do desenvolvimento web, incluindo tags e muito mais!</p>
+
+		<p>Fórmulas que você vai ver no curso:</p>
+
+		<p>A fórmula da água: H<sub>2</sub>O<br>Área do quadrado: A = L<sup>2</sup> </p>
+	</body>
+</html>

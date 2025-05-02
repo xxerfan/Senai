@@ -1,0 +1,89 @@
+1. CSS Inline: É aplicado diretamente no elemento HTML usando o atributo style. Ele afeta apenas aquele elemento específico.
+
+Quando usar: Estilizações rápidas ou únicas e para testes pontuais.
+
+Evitar usar quando: O estilo será repetido em vários elementos e se projeto for grande ou complexo.
+
+exemplo CSSInline.html
+
+<html>
+
+	<head>
+  		<meta charset="UTF-8">
+  		<title>CSS Inline</title>
+	</head>
+
+	<body>
+	  	<h1 style="color: #A020F0; text-align: center;">Título CSS Inline</h1>
+		<p style="color: #000080; font-size: 20px;">Parágrafo com estilo inline.</p>
+	</body>
+
+</html>
+
+2. CSS interno: É escrito dentro da própria página HTML, dentro de uma tag <style> na seção <head>. Ele pode ser aplicado a múltiplos elementos da mesma página.
+
+Quando usar: Em páginas pequenas e únicas e quando não se quer usar arquivos externos.
+
+Evitar usar quando: Você precisa aplicar o mesmo estilo em várias páginas e quando o projeto crescer.
+
+exemplo CSSInterno.html
+
+
+<html>
+
+	<head>
+  		<meta charset="UTF-8">
+  		<title>CSS Interno</title>
+ 		<style>
+   			h1 {
+     				color: #A020F0;
+				text-align: center;
+			}
+			p {
+				color: #000080;
+				font-size: 20px;
+			}
+  		</style>
+	</head>
+
+	<body>
+		<h1>Título CSS Interno</h1>
+		<p>Parágrafo com estilo interno.</p>
+	</body>
+
+</html>
+
+3. CSS Externo:É escrito em um arquivo separado (com extensão .css) e é importado para o HTML com a tag <link>. É a forma mais organizada e profissional de aplicar estilos.
+
+Quando usar: Em projetos maiores e com várias páginas e pra reutilização e manutenção facilitada.
+
+Evite usar quando: precisa de uma solução extremamente rápida e simples (como um teste rápido em uma única página).
+
+exemplo CSSExterno.html
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Externo</title>
+		<link rel="stylesheet" href="CSSExterno.css">
+	</head>
+
+	<body>
+		<h1>Título CSS Externo</h1>
+		<p>Parágrafo com estilo externo.</p>
+	</body>
+
+</html>
+
+exemplo CSSExterno.css
+
+h1{
+   color: #A020F0;
+   text-align: center;
+  }
+
+p{
+  color: #000080;
+  font-size: 20px;
+ }

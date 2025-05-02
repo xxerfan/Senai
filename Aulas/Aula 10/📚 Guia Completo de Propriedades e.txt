@@ -1,0 +1,162 @@
+📚 Guia Completo de Propriedades e Valores CSS
+🧰 Propriedades CSS Mais Usadas (por categoria)
+📐 Tamanho e Espaçamento
+width: Define a largura do elemento.
+
+height: Define a altura do elemento.
+
+max-width, min-width: Limita a largura máxima ou mínima.
+
+margin: Espaçamento externo ao redor do elemento.
+
+padding: Espaçamento interno dentro do elemento.
+
+box-sizing: Define o modelo de caixa (normalmente border-box é usado).
+
+🧱 Layout e Posicionamento
+display: Define o tipo de exibição do elemento (block, inline, flex, grid, none).
+
+position: Controla a posição do elemento (static, relative, absolute, fixed, sticky).
+
+top, right, bottom, left: Define a posição do elemento dentro de seu contêiner pai (apenas para elementos com position diferente de static).
+
+z-index: Controla a sobreposição de elementos, se dois elementos se sobrepõem.
+
+overflow: Controla o que acontece com o conteúdo que ultrapassa os limites do contêiner (visible, hidden, scroll, auto).
+
+🧭 Flexbox
+display: flex: Ativa o modelo de layout flexível.
+
+flex-direction: Define a direção dos itens dentro de um contêiner flexível (row, column, row-reverse, column-reverse).
+
+justify-content: Alinha os itens ao longo do eixo principal do contêiner (flex-start, flex-end, center, space-between, space-around).
+
+align-items: Alinha os itens ao longo do eixo transversal (perpendicular ao eixo principal) (flex-start, flex-end, center, baseline, stretch).
+
+align-content: Alinha as linhas de itens dentro do contêiner quando há várias linhas.
+
+flex-wrap: Permite que os itens do flexbox quebrem para uma nova linha (wrap, nowrap, wrap-reverse).
+
+flex: Atalho para flex-grow, flex-shrink e flex-basis para controlar o comportamento dos itens.
+
+🧩 Grid
+display: grid: Ativa o modelo de layout em grade.
+
+grid-template-columns, grid-template-rows: Define a estrutura de colunas e linhas do grid.
+
+gap: Define o espaçamento entre as células do grid.
+
+grid-column, grid-row: Define onde o item ficará posicionado nas linhas e colunas.
+
+justify-items, align-items: Controla o alinhamento dos itens dentro de suas células no grid.
+
+🎨 Cores e Fundo
+color: Define a cor do texto.
+
+background-color: Define a cor de fundo do elemento.
+
+background-image: Define a imagem de fundo.
+
+background-size: Define o tamanho da imagem de fundo.
+
+background-position: Define a posição da imagem de fundo.
+
+opacity: Define a opacidade do elemento (0 a 1, onde 0 é totalmente transparente e 1 é totalmente opaco).
+
+🔤 Texto e Fontes
+font-family: Define a fonte do texto.
+
+font-size: Define o tamanho da fonte.
+
+font-weight: Define a espessura da fonte (normal, bold, lighter, valores numéricos de 100 a 900).
+
+font-style: Define o estilo da fonte (normal, italic, oblique).
+
+line-height: Define a altura da linha.
+
+text-align: Define o alinhamento do texto (left, center, right, justify).
+
+text-transform: Controla a transformação do texto (uppercase, lowercase, capitalize).
+
+text-decoration: Define a decoração do texto (underline, line-through, none).
+
+letter-spacing: Define o espaçamento entre letras.
+
+word-spacing: Define o espaçamento entre palavras.
+
+🖼️ Borda e Sombra
+border: Atalho para definir border-width, border-style e border-color.
+
+border-radius: Define os cantos arredondados do elemento.
+
+box-shadow: Aplica uma sombra ao redor do elemento.
+
+outline: Aplica um contorno ao elemento, geralmente usado para elementos com foco.
+
+🖱️ Interatividade e Efeitos
+cursor: Define o tipo de cursor ao passar sobre o elemento (pointer, default, crosshair, etc.).
+
+transition: Define animações suaves quando uma propriedade é alterada.
+
+transform: Permite aplicar transformações ao elemento, como rotação (rotate), escalonamento (scale), translação (translate), etc.
+
+animation: Aplica animações baseadas em @keyframes.
+
+visibility: Controla a visibilidade do elemento, mas mantém o espaço ocupado na página (visible, hidden).
+
+💡 Valores CSS Comuns + Propriedades + Função
+
+🧩 Valor	🔧 Propriedade (Atributo)	🧠 Função / Descrição
+static	position	Posição padrão, o elemento segue o fluxo normal da página
+relative	position	Posiciona relativo à posição original
+absolute	position	Posiciona em relação ao ancestral posicionado
+fixed	position	Fica fixo na tela mesmo com scroll
+sticky	position	Fica fixo após atingir uma posição no scroll
+row	flex-direction, grid-auto-flow	Direção horizontal (linha)
+column	flex-direction, grid-auto-flow	Direção vertical (coluna)
+row-reverse	flex-direction	Linha invertida (da direita para a esquerda)
+column-reverse	flex-direction	Coluna invertida (de baixo pra cima)
+red, #000, rgb()	color, background-color, etc.	Define cores do texto, fundo, borda, etc.
+px, %, em, rem	width, height, margin, padding, font-size	Define tamanho em unidades variadas (pixels, porcentagem, etc.)
+auto	margin, width, height	Define tamanho automático ou centraliza o conteúdo
+block	display	O elemento ocupa toda a largura disponível (ex: <div>)
+inline	display	O elemento ocupa apenas o espaço do conteúdo (ex: <span>)
+flex	display	Ativa layout flexível
+grid	display	Ativa layout em grade (linhas e colunas)
+none	display, border, etc.	Remove exibição ou estilo (oculta o elemento)
+center	text-align, justify-content	Centraliza texto ou elementos
+left, right	text-align, float	Alinha texto ou elementos à esquerda/direita
+space-between	justify-content	Espaço entre itens, sem margem nas bordas
+flex-start, flex-end, center	align-items, justify-content	Alinha os itens ao início, fim ou centro do eixo
+solid, dashed, dotted	border-style	Estilo da borda (linha contínua, tracejada, pontilhada)
+0, 5px, 10px	border-radius, box-shadow	Define arredondamentos e sombras
+rotate(45deg)	transform	Gira o elemento
+scale(1.2)	transform	Aumenta ou reduz o tamanho do elemento
+translateX(20px)	transform	Move o elemento horizontalmente
+all 0.3s ease	transition	Anima qualquer mudança suavemente
+pointer	cursor	Mostra o cursor de clique (mãozinha)
+hidden, scroll, auto	overflow	Esconde ou ativa rolagem do conteúdo excedente
+visible, hidden	visibility	Exibe ou oculta o elemento (mantendo o espaço)
+uppercase, lowercase, capitalize	text-transform	Transforma texto em maiúsculo, minúsculo ou capitalizado
+🧠 Significado de row, column
+row: direção em linha (horizontal).
+
+column: direção em coluna (vertical).
+
+Us
+
+
+
+
+
+Continuar gerando
+
+
+Anexar
+
+Buscar
+
+Refletir
+
+Voz
+O ChatGPT pode cometer erros. 
