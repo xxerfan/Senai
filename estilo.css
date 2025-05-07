@@ -3,7 +3,6 @@
     border-radius: 8px;
     padding: 20px;
     max-width: 400px;
-    height: auto;
     margin: 0 auto;
 }
 body {
@@ -12,26 +11,25 @@ body {
     color: #333;
     padding: 20px;
 }
-h2 {
-    text-align: center;
+  h2 {
     color: #0a39d2;
-    margin-bottom: 20px;
+    text-align: center;
 }
 .container img{
-    width: 100%;
-    border-radius: 16px 16px 0 0;
+    display: block;
+    margin: 0 auto
 }
 a {
     text-decoration: none;
     color: #333;
     display: block;
+    padding: 8px;
     border-radius: 4px;
 }
-ul {
+  ul {
     list-style-type: none;
 }
-
-li {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+  a:hover {
+    background-color: #7c8ce4;
+    color: #fff;
 }
