@@ -1,0 +1,44 @@
+.container{
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+.box{
+    width: 900px;
+    height: auto;
+    margin: 8px auto;
+    display: flex;
+    padding: 8px;
+    border: 1px solid #999;
+    justify-content: space-between;
+}
+.box img {
+        width: 30%;
+}
+.content{
+    width: 65%;
+    height: auto;
+}
+
+@media screen and (max-width: 1023px){
+
+    .container{
+        width: 100%;
+    }
+
+    .box{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .box img{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+
+} 
+
