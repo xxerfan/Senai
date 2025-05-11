@@ -1,20 +1,22 @@
-
-
+/* Container principal que centraliza e organiza os elementos lado a lado */
 .Container {
-  width: 1024px;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  width: 1024px;                  /* Define uma largura fixa */
+  height: auto;                   /* Altura automática baseada no conteúdo */
+  margin: 0 auto;                 /* Centraliza horizontalmente */
+  display: flex;                 /* Usa Flexbox para alinhar os elementos filhos */
+  justify-content: space-between;/* Distribui espaço igual entre os filhos */
 }
 
+/* Estilo das caixas (cards) dentro do container */
 .box {
-  width: 300px;
-  height: auto;
-  border: 1px solid #999;
-  Padding: 8px;
-  border-radius: 0 10px 0 10px;
+  width: 300px;                   /* Largura fixa da caixa */
+  height: auto;                   /* Altura se ajusta ao conteúdo */
+  border: 1px solid #999;         /* Borda cinza claro */
+  padding: 8px;                   /* Espaçamento interno (corrigido: estava com "P" maiúsculo) */
+  border-radius: 0 10px 0 10px;   /* Bordas arredondadas apenas em cantos alternados */
 }
+
+/* Imagens dentro da box ocupam toda a largura da caixa */
 .box img {
-  width: 100%;
+  width: 100%;                    /* Faz a imagem se ajustar à largura da box */
 }

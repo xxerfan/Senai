@@ -1,44 +1,41 @@
 .container{
-    width: 1024px;
-    height: auto;
-    margin: 0 auto;
+    width: 1024px; /* Define a largura da .container para 1024px */
+    height: auto; /* A altura será ajustada automaticamente conforme o conteúdo */
+    margin: 0 auto; /* Centraliza a .container horizontalmente na página */
 }
-.box{
-    width: 900px;
-    height: auto;
-    margin: 8px auto;
-    display: flex;
-    padding: 8px;
-    border: 1px solid #999;
-    justify-content: space-between;
+.box{ /* Estiliza a .box, que é um contêiner flexível */
+    width: 900px; /* Define a largura da .box para 900px */
+    height: auto; /* A altura será ajustada automaticamente conforme o conteúdo */
+    margin: 8px auto; /* Define margem de 8px no topo e embaixo, e centraliza a .box horizontalmente */
+    display: flex; /* Define o layout da .box como flexível (flexbox) */
+    padding: 8px; /* Adiciona um preenchimento de 8px em todos os lados dentro da .box */
+    border: 1px solid #999; /* Adiciona uma borda de 1px, cor cinza claro */
+    justify-content: space-between; /* Distribui os itens filhos da .box com espaço entre eles */
 }
 .box img {
-        width: 30%;
+        width: 30%; /* Define a largura da imagem dentro da .box para 30% da largura da .box */
 }
 .content{
-    width: 65%;
-    height: auto;
+    width: 65%; /* Define a largura da .content para 65% da largura da .box */
+    height: auto; /* A altura será ajustada automaticamente conforme o conteúdo */
 }
 
-@media screen and (max-width: 1023px){
-
-    .container{
-        width: 100%;
+@media screen and (max-width: 1023px){ 
+/* Início de uma media query que aplica estilos para telas pequenas (largura até 1023px) */
+    .container{ 
+        width: 100%; /* Define a largura da .container como 100% para telas menores */
     }
 
     .box{
-        width: 80%;
-        flex-direction: column;
+        width: 80%; /* Define a largura da .box para 80% da tela e muda a direção dos itens para coluna (vertical) */
+        flex-direction: column; /* Flexbox com direção em coluna, empilhando os itens verticalmente */
     }
 
     .box img{
-        width: 100%;
+        width: 100%; /* A imagem dentro da .box ocupará 100% da largura da .box */
     }
 
     .content{
-        width: 100%;
+        width: 100%; /* A .content ocupará 100% da largura da .box em telas pequenas */
     }
-
-
 } 
-

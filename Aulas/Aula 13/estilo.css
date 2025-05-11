@@ -1,58 +1,65 @@
+/* Define configuração base para todos os elementos da página */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Inclui padding e borda dentro das dimensões definidas (evita cálculo manual) */
+  margin: 0;              /* Remove margens padrão dos navegadores */
+  padding: 0;             /* Remove espaçamentos internos padrão */
+  font-family: Arial, sans-serif; /* Fonte padrão da página */
 }
 
+/* Estilo do contêiner principal que envolve os boxes */
 .container {
-  width: 1024px;
-  margin: 40px auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  width: 1024px; /* Largura fixa para o conteúdo */
+  margin: 40px auto; /* Centraliza horizontalmente e adiciona espaço superior */
+  display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+  justify-content: space-between; /* Distribui espaço entre os elementos */
+  gap: 20px; /* Espaçamento entre as caixas */
 }
 
+/* Estilo das caixas (cards) que contêm imagem, título, texto e botão */
 .box {
-  width: 300px;
-  background-color: #000;
-  padding: 16px;
-  border-radius: 16px;
-  border: 1px solid white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 300px; /* Largura fixa da caixa */
+  background-color: #000; /* Fundo preto */
+  padding: 16px; /* Espaçamento interno */
+  border-radius: 16px; /* Bordas arredondadas */
+  border: 1px solid white; /* Borda branca ao redor */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra suave branca ao redor */
+  display: flex; /* Flexbox para organizar os elementos internos */
+  flex-direction: column; /* Elementos dispostos em coluna */
+  align-items: center; /* Alinha elementos ao centro horizontalmente */
 }
 
+/* Estilo para imagens dentro da box */
 .box img {
-  width: 100%;
-  height: 220px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 16px;
+  width: 100%; /* Imagem ocupa toda a largura da caixa */
+  height: 220px; /* Altura fixa */
+  border-radius: 10px; /* Bordas arredondadas da imagem */
+  object-fit: cover; /* Corta e preenche a imagem mantendo proporção */
+  margin-bottom: 16px; /* Espaço inferior entre a imagem e o texto */
 }
 
+/* Título dentro da box */
 .box h2 {
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  font-size: 24px; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Espaço abaixo do título */
 }
 
+/* Parágrafo dentro da box */
 .box p {
-  color: white;
-  text-align: center;
-  margin-bottom: 16px;
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o parágrafo */
+  margin-bottom: 16px; /* Espaço abaixo do texto */
 }
 
+/* Botão (link estilizado) dentro da box */
 .box a {
-  color: white;
-  background-color: crimson;
-  border-radius: 8px;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
+  color: white; /* Cor do texto */
+  background-color: crimson; /* Fundo vermelho escuro */
+  border-radius: 8px; /* Bordas arredondadas */
+  display: block; /* Permite aplicar largura, altura e padding */
+  padding: 10px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado padrão */
+  text-align: center; /* Centraliza o texto dentro do botão */
 }
 

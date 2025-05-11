@@ -1,64 +1,78 @@
-                    #banner{
-    width: 100%;
-    height: 500px;
-    background-image: url(images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+/* Estilo da seção de banner com imagem de fundo */
+#banner {
+    width: 100%; /* Largura total da tela */
+    height: 500px; /* Altura fixa do banner */
+    background-image: url(images/banner.jpg); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* A imagem cobre todo o banner */
+    display: flex; /* Permite alinhar itens com flexbox */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
 }
 
-.container{
-    width: 1280px;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-h2{
-    font-size: 32px;
-}
-#banner h2{
-    color: #fff;
+/* Container centralizado e com espaçamento entre os elementos */
+.container {
+    width: 1280px; /* Largura fixa do container */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+    display: flex; /* Layout com flexbox */
+    justify-content: space-between; /* Espaço uniforme entre os elementos filhos */
 }
 
-p{
-    font-size: 18px;
-}
-#banner p{
-    color: #fff;
-    font-weight: bold;
+/* Título principal */
+h2 {
+    font-size: 32px; /* Tamanho da fonte */
 }
 
-.btn{
-    display: inline-block;
-    padding: 15px 30px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 1px solid #fff;
+/* Título dentro do banner com cor branca */
+#banner h2 {
+    color: #fff; /* Cor branca para contraste com o fundo escuro */
 }
 
-.card{
-    width: 268px;
-    height: auto;
-    border: 1px solid #c0c0c0;
-    border-radius: 16px;
+/* Parágrafos gerais */
+p {
+    font-size: 18px; /* Tamanho da fonte dos parágrafos */
 }
 
-.card .content{
-    padding: 0 16px 8px;
+/* Parágrafos dentro do banner com destaque */
+#banner p {
+    color: #fff; /* Cor branca */
+    font-weight: bold; /* Negrito */
 }
 
-.card img{
-    width: 100%;
-    border-radius: 16px 16px 0 0;
+/* Estilo para botões principais */
+.btn {
+    display: inline-block; /* Permite aplicar altura e largura */
+    padding: 15px 30px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 20px; /* Tamanho da fonte */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 1px solid #fff; /* Borda branca */
 }
 
-.btn-secound{
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    color: #000066cc;
+/* Estilo dos cartões (ex: produtos ou serviços) */
+.card {
+    width: 268px; /* Largura fixa */
+    height: auto; /* Altura ajustável */
+    border: 1px solid #c0c0c0; /* Borda cinza clara */
+    border-radius: 16px; /* Cantos arredondados */
+}
+
+/* Espaçamento interno dentro do cartão */
+.card .content {
+    padding: 0 16px 8px; /* Espaçamento à esquerda, direita e embaixo */
+}
+
+/* Imagem dentro do cartão */
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do cartão */
+    border-radius: 16px 16px 0 0; /* Cantos superiores arredondados */
+}
+
+/* Botão secundário com estilo de link */
+.btn-secound {
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 22px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #000066cc; /* Azul escuro com transparência */
 }

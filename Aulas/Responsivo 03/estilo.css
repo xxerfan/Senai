@@ -1,116 +1,166 @@
+/* Estabelecendo a fonte padrão para toda a página */
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Define a fonte base para a página. Ao usar essa fonte, garante-se um design mais coerente e legível em todos os dispositivos */
 }
+
+/* Definindo o estilo para a seção do cabeçalho */
 .header{
-    width: 100%;
-    height: 80px;
+    width: 100%; /* O cabeçalho ocupa toda a largura da tela */
+    height: 80px; /* A altura do cabeçalho é fixada em 80px */
+    /* Define a altura e a largura do cabeçalho. Isso garante que ele tenha uma altura consistente e ocupe toda a largura disponível */
 }
+
+/* Definindo o layout do container dentro do cabeçalho */
 .container{
-    width: 1024px;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    width: 1024px; /* Largura do container é 1024px */
+    height: auto; /* Altura do container é automática para se ajustar ao conteúdo */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    display: flex; /* Usando Flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaça os itens dentro do container igualmente */
+    /* Flexbox é utilizado para garantir um layout flexível e responsivo. O "justify-content" distribui os itens igualmente no espaço disponível */
 }
+
+/* Estilizando o menu (lista de navegação) */
 .menu{
-    list-style: none;
-    display: flex;
-
+    list-style: none; /* Remove os pontos das listas */
+    display: flex; /* Exibe os itens de lista em linha */
+    /* Usamos Flexbox novamente para garantir que os itens do menu fiquem alinhados horizontalmente e sem os pontos tradicionais das listas */
 }
+
+/* Estilo para os links dentro do menu */
 .menu a{
-    color: #c12a21;
-    text-decoration: none;
-    padding: 8 16;
-    ;
+    color: #c12a21; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 8px 16px; /* Espaçamento interno (padding) nos links */
+    /* As propriedades aqui garantem que os links tenham uma aparência mais limpa e estilosa, sem sublinhado e com uma cor vermelha */
 }
+
+/* Estilo para o banner (imagem principal da página) */
 .banner{
-    width: 1024px;
-    height: auto;
-    margin: 0 auto;
+    width: 1024px; /* Largura do banner é 1024px */
+    height: auto; /* Altura do banner é automática, ajustando-se ao conteúdo */
+    margin: 0 auto; /* Centraliza o banner na página */
+    /* O banner é centralizado e ocupa toda a largura disponível para maximizar a visibilidade da imagem */
 }
+
+/* Estilo para a imagem dentro do banner, ajustando sua largura */
 .banner img{    
-    width: 100%;
+    width: 100%; /* A imagem ocupa toda a largura do banner */
+    /* A imagem do banner é redimensionada para ocupar toda a largura do container, garantindo uma boa visualização */
 }
+
+/* Estilo para o container dentro da seção de conteúdo */
 .section .container{
-    flex-direction: column;
+    flex-direction: column; /* Alinha os itens do container verticalmente */
+    /* Em telas menores ou quando a seção de conteúdo exige, alteramos a direção do flex para que os itens se alinhem verticalmente */
 }
+
+/* Estilo para o título dentro da seção de conteúdo */
 .section h2{
-    color: #c12a21;
+    color: #c12a21; /* Cor do título da seção */
+    /* O título da seção é destacado com a mesma cor do menu para manter a consistência visual */
 }
+
+/* Estilo para as caixas dentro da seção de conteúdo */
 .box{
-    width: 300;
-    height: auto;
-    background-color: #c12a21;
-    border-radius: 8px;
-    padding: 8px 16px 8px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 300px; /* Largura das caixas é 300px */
+    height: auto; /* Altura das caixas é automática, ajustando-se ao conteúdo */
+    background-color: #c12a21; /* Cor de fundo das caixas */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    padding: 8px 16px 8px; /* Espaçamento interno da caixa */
+    color: #fff; /* Cor do texto dentro da caixa é branca */
+    display: flex; /* Usando Flexbox dentro da caixa */
+    flex-direction: column; /* Alinha os itens da caixa verticalmente */
+    justify-content: space-between; /* Distribui o conteúdo igualmente dentro da caixa */
+    /* Aqui, criamos caixas com um fundo vermelho e texto branco. Elas são flexíveis e podem conter diferentes tipos de conteúdo, sempre mantendo o layout organizado */
 }
+
+/* Estilo para os títulos dentro das caixas */
 .box h2{
-    color: #fff;
-    text-align: center;
+    color: #fff; /* Cor do título da caixa é branca */
+    text-align: center; /* Alinha o título ao centro da caixa */
+    /* O título das caixas é centralizado e aparece em branco para contraste com o fundo vermelho */
 }
+
+/* Estilo para as imagens dentro das caixas */
 .box img{
-    width: 100%;
+    width: 100%; /* A imagem ocupa toda a largura da caixa */
+    /* As imagens dentro das caixas também ocupam toda a largura disponível, garantindo que se ajustem corretamente ao tamanho da caixa */
 }
+
+/* Estilo para os botões dentro das caixas */
 .btn{
-    color: #444;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 8px 16px;
-    box-sizing: border-box;/*limita o block*/
-    border-radius: 8px;
-    text-transform: uppercase;/*força o texto a ficar em caixa alta*/
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+    color: #444; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    background-color: #fff; /* Cor de fundo do botão é branca */
+    padding: 8px 16px; /* Espaçamento interno do botão */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho do botão */
+    border-radius: 8px; /* Bordas arredondadas do botão */
+    text-transform: uppercase; /* Transforma o texto do botão em caixa alta */
+    display: inline-block; /* Exibe o botão como um bloco em linha */
+    width: 100%; /* O botão ocupa toda a largura disponível */
+    text-align: center; /* Alinha o texto do botão ao centro */
+    /* O botão é estilizado com fundo branco, texto em negrito e transformado em caixa alta. O layout flexível permite que o botão ocupe toda a largura da caixa */
 }
-.content{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
 
+/* Estilo para a seção de conteúdo */
+.content{
+    width: 100%; /* O conteúdo ocupa toda a largura disponível */
+    height: auto; /* A altura é automática */
+    display: flex; /* Usando Flexbox para distribuir os itens */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    /* O conteúdo é distribuído com Flexbox, permitindo uma disposição limpa e eficiente dos elementos dentro da página */
 }
+
+/* Estilo para o rodapé */
 .footer{
-    background-color: #c12a21;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    font-weight: bolder;
-    padding: 32px 0;
-    margin-top: 32px;
+    background-color: #c12a21; /* Cor de fundo do rodapé */
+    width: 100%; /* O rodapé ocupa toda a largura da página */
+    display: flex; /* Usando Flexbox para organizar os itens */
+    flex-direction: column; /* Organiza os itens do rodapé verticalmente */
+    align-items: center; /* Alinha os itens ao centro */
+    color: #fff; /* Cor do texto no rodapé é branca */
+    font-weight: bolder; /* Torna o texto mais forte (negrito) */
+    padding: 32px 0; /* Espaçamento interno do rodapé */
+    margin-top: 32px; /* Espaço acima do rodapé */
+    /* O rodapé tem uma cor de fundo vermelha e o conteúdo é centralizado e disposto verticalmente */
 }
+
+/* Regras para dispositivos com largura máxima de 1023px (versão responsiva) */
 @media screen and (max-width:1023px){
-.header{
-    height: auto;
-    align-items: center;
-
-}
-.container{
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.banner{
-    width: 100%;
-
-}
-.content{
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
+    /* Estilo para o cabeçalho em telas menores */
+    .header{
+        height: auto; /* A altura do cabeçalho se ajusta automaticamente */
+        align-items: center; /* Alinha os itens ao centro do cabeçalho */
     }
-.box{
-    height: auto;
-    margin-bottom: 16px;
-}
-}
 
+    /* Estilo para o container dentro do cabeçalho em telas menores */
+    .container{
+        width: 100%; /* O container ocupa toda a largura da tela */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    /* Estilo para o banner em telas menores */
+    .banner{
+        width: 100%; /* O banner ocupa toda a largura da tela */
+    }
+
+    /* Estilo para o conteúdo em telas menores */
+    .content{
+        width: 100%; /* O conteúdo ocupa toda a largura disponível */
+        height: auto; /* A altura é automática */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    /* Estilo para as caixas dentro da seção em telas menores */
+    .box{
+        height: auto; /* A altura das caixas é automática */
+        margin-bottom: 16px; /* Espaço abaixo de cada caixa */
+    }
+    /* O "media query" adapta o layout para telas menores, como dispositivos móveis, ajustando a direção do conteúdo e o tamanho dos elementos */
+}
