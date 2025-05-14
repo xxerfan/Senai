@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-menu a.btn-nav {
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-text span {
+    font-weight: 300;
+  }
+  
+  .car-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Sections */
+  .section, .highlight {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .highlight {
+    background: linear-gradient(to right, #5e0a0a, #aa2323);
+    color: #fff;
+  }
+  
+  .highlight-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+  }
+  
+  .footer-links a {
+    margin: 0 0.5rem;
+    color: #000;
+    font-size: 0.9rem;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .hero, .section, .highlight {
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+    }
+  
+    .hero-text, .text, .highlight-text {
+      flex: 1;
+      padding-right: 2rem;
+    }
+  
+    .car-image {
+      flex: 1;
+    }
+  
+    .nav-menu {
+      gap: 2rem;
+    }
+  
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+  }
+  
