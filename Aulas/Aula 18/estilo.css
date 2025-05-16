@@ -1,0 +1,15 @@
+
+body {
+	background-color: #020202;
+	color: #fff;
+	}
+h2 .destaque{
+	font-weight: 700;
+	font-size: 60px;
+	font-family: 'Inter';
+}
+h2 .destaque2{
+	font-weight: 300;
+	font-size: 24px;
+	font-family: 'Inter';
+}
